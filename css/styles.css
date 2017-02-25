@@ -1,0 +1,372 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+}
+
+.text-vertical-center p {
+    display: inline;
+}
+
+.red {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: table;
+    background-color: rgba(223, 41, 53, 0.5);
+    text-transform: uppercase;
+    font-family: 'Open Sans', serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+}
+
+.black {
+    padding: 10px;
+    margin-bottom: 10px;
+    /*font-style:italic   ;*/
+    display: table;
+    font-family: 'Open Sans', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.8);
+    vertical-align: middle;
+    color: #fff;
+}
+
+.header .black {
+    font-size: 34px;
+}
+
+.yellow {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: table;
+    background-color: rgba(255, 216, 0, 0.8);
+    font-family: 'Open Sans', serif;
+}
+
+
+/* Custom Horizontal Rule */
+
+hr {
+    color: #f00;
+    background-color: #f00;
+    height: 5px;
+    width: 100px;
+    margin-left: 0;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Open Sans', serif;
+    text-transform: uppercase;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fbfbfb;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), /* bottom, image */
+    url(../img/people.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+#about .content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+}
+
+#about .lead {
+    font-family: 'Open Sans', serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+#to-top {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+/*Extra*/
+
+#registrations .content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+}
+
+#registrations .lead {
+    font-family: 'Open Sans', serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+#schedule .content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+}
+
+#schedule .lead {
+    font-family: 'Open Sans', serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+.margin {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    background-color: #fbffff;
+}
+
+.side-row {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+.banner > p {
+    display: block;
+    line-height: 2em;
+    padding: 0.2em;
+    font-family: 'Open Sans', serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #ffd800
+}
+
+.banner > .equalto {
+    background-color: #df2935;
+    color: #fbffff;
+    font-family: 'Open Sans', serif;
+    font-weight: 800;
+}
+
+.banner-yellow {
+    position: relative;
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+    background: #ffd800;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .is-table-row {
+        display: table;
+    }
+    .is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.activities {
+    color: #fff;
+    background: /* top, transparent red, faked with gradient */
+    linear-gradient( rgba(233, 41, 53, 0.8), rgba(233, 41, 53, 0.8)), /* bottom, image */
+    url(../img/people.jpg) no-repeat center center scroll;
+    padding-bottom: 5vh;
+}
+
+#activities .lead {
+    font-family: 'Open Sans', serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#activities hr {
+    color: #fff;
+    background-color: #fff;
+    height: 5px;
+    width: 100px;
+    margin-left: 0;
+}
+
+#activities .sub-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.aside {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+
+/*Organizers*/
+
+.organizers {
+    color: #fff;
+    background: linear-gradient( rgba(233, 41, 53, 0.8), rgba(233, 41, 53, 0.8)), /* bottom, image */
+    url(../img/people2.jpg) no-repeat center center scroll;
+    padding-bottom: 5vh;
+}
+
+#organizers hr {
+    color: #fff;
+    background-color: #fff;
+    height: 5px;
+    width: 100px;
+    margin-left: 0;
+}
+
+#organizers .lead {
+    font-family: 'Open Sans', serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#organizers .sub-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+}
