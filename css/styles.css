@@ -209,6 +209,14 @@ hr {
     /*font-style: italic;*/
 }
 
+#about .lead-2 {
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
 #to-top {
     display: none;
     position: fixed;
@@ -410,4 +418,9 @@ border-radius: 0px;
 
 .vertical-padding {
     padding: 20px 0;
+}
+
+.attributions {
+    font-size:10px;
+    color: grey;
 }
